@@ -1,0 +1,192 @@
+header{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.header-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.header-logo img{
+    width: 62px;
+    height: 60px;  
+}
+.icons{
+    display: flex;
+    align-items:center;
+     position: absolute;
+     top: 15px;
+     right: 140px;
+     height: 100%;
+
+}
+.headerBtn{
+    position: relative;
+    margin-left: 30px;
+}
+.headerBtn .inner{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding-bottom: 5px;
+    color:#7FD1D8;
+    font-family:'DejaVu Sans';
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+    margin-top: 80px;
+}
+.container h1{
+    width: 460px;
+    height: 100px;
+    display: inline-block;
+    font-size: 40px;
+    color:#947DCE;
+    margin-bottom: 10px;
+    font-family: 'ALK Sanet';
+    
+}
+.container h2{
+    width: 450px;
+    font-size: 20px;
+    display: inline-block;
+    color:#C5CBCD;
+    opacity: 100%;
+    font-family: 'DejaVu Sans';
+}
+.click{
+    width: 155px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color:#7FD1D8;
+    box-shadow:  0px 0px 10px 0px;
+
+   
+}
+.click:hover{
+    color:#F8D24B;
+    transition: .5s;
+}
+.click a {
+    color:#7FD1D8;
+    font-size: 15px;
+    
+}
+.main-img{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+.img-science{
+    width: 462px;
+    height: 513px;
+    margin-left: 30px;
+}
+
+.numbers{
+    display: flex;
+    margin-top: 150px;
+   
+
+}
+.number-inner{
+    display: inline-block;
+    width: 70px;
+    position: relative;
+    height: 1px;
+    background-color: #C5CBCD;
+}
+.number-inner .dot {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+}
+.number-inner span{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 5px;
+    color: #C5CBCD;
+    justify-content: center;
+    font-size: 20px;
+    display: flex;
+    font-family: 'ALK Sanet';
+}
+.number-inner.active span{
+    font-size: 30px;
+}
+.dot{
+    display: none;
+}
+.number-inner.active .dot{
+    display: flex;
+}
+.dot-inner{
+    background-color:grey;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin-right: 1px;
+}
+.dot .dot-inner:hover{
+    font-size: 30px;
+    color: #947DCE;
+}
+.numbers .dot-1:hover{
+    font-size: 30px;
+    color:#DC6C85;
+    
+}
+.numbers .dot-1:hover .img-science{
+    display: none;
+}
+
+
+.number-inner.active:nth-child(1) span{
+    color: #947DCE;
+}
+.number-inner.active:nth-child(1) .dot-inner{
+    border-color: #947DCE;
+}
+.number-inner.active:nth-child(2) span{
+    color: #DC6C85;
+}
+.number-inner.active:nth-child(2) .dot-inner{
+    border-color: #DC6C85;
+}
+.number-inner.active:nth-child(3) span{
+    color: #F8D24B;
+}
+.number-inner.active:nth-child(3) .dot-inner{
+    border-color: #F8D24B;
+}
+.number-inner.active:nth-child(4) span{
+    color: #7FD1D8;
+}
+.number-inner.active:nth-child(4) .dot-inner{
+    border-color: #7FD1D8;
+}
